@@ -1,1 +1,5 @@
-<p>all-books works!</p>
+<div class="container">
+  <ng-container *ngFor="let book of allBooks">
+    <app-book [test]="book"></app-book>
+  </ng-container>
+</div>
