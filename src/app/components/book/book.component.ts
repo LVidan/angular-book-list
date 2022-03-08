@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IBook } from 'src/app/interfaces/i-book';
 
 @Component({
   selector: 'app-book',
@@ -7,13 +6,12 @@ import { IBook } from 'src/app/interfaces/i-book';
   styleUrls: ['./book.component.scss']
 })
 export class BookComponent implements OnInit {
-  @Input() test: any;
+  @Input() singleBook: any;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.test);
-
+    console.log(this.singleBook, 'alo');
   }
 
 }
