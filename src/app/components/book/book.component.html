@@ -1,1 +1,16 @@
-<p>book works!</p>
+<div class="book">
+  <div class="book__img">
+    <img src="./assets/{{ singleBook.imageLink }}" alt="{{ singleBook.title }}">
+  </div>
+  <div class="book__cnt">
+    <h2>{{ singleBook.title }}</h2>
+    <hr>
+    <h3>{{ singleBook.author }}</h3>
+    <ul class="book__list">
+      <li class="book__list-item">Edition: {{ singleBook.year }}</li>
+      <li class="book__list-item">Country: {{ singleBook.country }}</li>
+      <li class="book__list-item">Year: {{ singleBook.year }}</li>
+      <li class="book__list-item">Pages: {{ singleBook.pages }}</li>
+    </ul>
+  </div>
+</div>

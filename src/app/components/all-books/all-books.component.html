@@ -1,5 +1,9 @@
 <div class="container">
-  <ng-container *ngFor="let book of allBooks">
-    <app-book [singleBook]="book"></app-book>
-  </ng-container>
+  <div class="row">
+    <ng-container *ngFor="let book of allBooks">
+      <div class="col-sm-6">
+        <app-book [singleBook]="book"></app-book>
+      </div>
+    </ng-container>
+  </div>
 </div>
